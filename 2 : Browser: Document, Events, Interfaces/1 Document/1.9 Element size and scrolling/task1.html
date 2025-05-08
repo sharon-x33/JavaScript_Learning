@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .content {
+        background-color: brown;
+        height: 500px;
+        width: 500px;
+      }
+
+      #box {
+        width: 300px;
+        height: 150px;
+        overflow: auto;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <div class="content">scroll down...</div>
+    </div>
+
+    <script>
+      const box = document.getElementById("box");
+      box.onscroll = () => {
+        let scrollBottom = box.scrollHeight - box.scrollTop - box.clientHeight;
+        if (scrollBottom == 0) {
+          alert("0");
+        }
+      };
+    </script>
+  </body>
+</html>
