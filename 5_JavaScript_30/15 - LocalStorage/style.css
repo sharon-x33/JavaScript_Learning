@@ -30,7 +30,42 @@ svg {
   max-width: 350px;
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+  
 }
+
+.clear{
+  position: relative;
+  top: 0px;
+  padding: 5px;
+  background-color: red;
+  color: white;
+}
+
+.uncheck{
+  position: relative;
+  top: 0px;
+  padding: 5px;
+  background-color: grey;
+  color: white;
+}
+#buttoncontainer{
+  background-color: antiquewhite;
+
+  position: relative;
+  top: 70px;
+  padding: 5px;
+
+}
+
+.check{
+  position: relative;
+  top: 0px;
+  padding: 5px;
+  background-color: green;
+  color: white;
+}
+
+
 
 h2 {
   text-align: center;
