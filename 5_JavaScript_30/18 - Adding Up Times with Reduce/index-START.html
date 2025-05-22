@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <title>Videos</title>
     <link rel="icon" href="https://fav.farm/🔥" />
+    <style>
+      .videos li {
+        display: inline-block;
+      }
+    </style>
   </head>
   <body>
     <ul class="videos">
@@ -85,6 +90,12 @@
       secondsLeft = secondsLeft % 60;
 
       console.log(hours, mins, secondsLeft);
+
+      const newDiv = document.createElement("h1");
+
+      newDiv.textContent = `${hours} hours ${mins} minutes and ${secondsLeft} seconds left`;
+
+      document.body.appendChild(newDiv);
     </script>
   </body>
 </html>
