@@ -16,42 +16,42 @@
       }
 
       body {
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start; /* Shift content upwards */
         align-items: center;
         background-color: #0e0e0e;
         color: #f5f5f5;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        padding-top: 40px; /* Shift up */
+        padding: 40px 20px;
       }
 
       h1 {
         margin-bottom: 30px;
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         color: #ffffff;
         font-family: "Orbitron", sans-serif;
         letter-spacing: 2px;
+        text-align: center;
       }
 
       .container {
         background-color: #1a1a1a;
-        padding: 40px;
+        padding: 30px;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        gap: 30px;
+        gap: 20px;
         border-radius: 16px;
         box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
         width: 100%;
-        max-width: 1500px;
+        max-width: 90em;
       }
 
       .container a {
         text-decoration: none;
         color: #e0e0e0;
         background-color: #292929;
-        padding: 14px 12px;
+        padding: 14px 10px;
         border-radius: 8px;
         text-align: center;
         font-weight: 500;
@@ -61,6 +61,7 @@
         align-items: center;
         min-height: 50px;
         box-shadow: inset 0 0 0 1px #3a3a3a;
+        font-size: 0.95rem;
       }
 
       .container a:hover {
@@ -72,80 +73,59 @@
 
       .footer {
         margin-top: 30px;
-        font-size: 1rem;
+        font-size: 0.95rem;
         color: #ffffff;
         opacity: 0.3;
+        text-align: center;
       }
+
+      @media (max-width: 1024px) {
+       .container {
+       grid-template-columns: repeat(3, 1fr);
+       }
+      }
+
+      @media (max-width: 768px) {
+         .container {
+          grid-template-columns: repeat(2, 1fr);
+          padding: 20px;
+          gap: 15px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          grid-template-columns: 1fr;
+          padding: 15px;
+          gap: 12px;
+        }
+      }
+
+
+      
     </style>
   </head>
   <body>
     <h1>JavaScript 30</h1>
     <div class="container">
-      <a
-        href="5_JavaScript_30/01%20-%20JavaScript%20Drum%20Kit/index-START.html"
-        >1. Drum Kit</a
-      >
-      <a href="5_JavaScript_30/02%20-%20JS%20and%20CSS%20Clock/index-START.html"
-        >2. Clock</a
-      >
-      <a href="5_JavaScript_30/03%20-%20CSS%20Variables/index-START.html"
-        >3. CSS Variables</a
-      >
-      <a
-        href="5_JavaScript_30/04%20-%20Array%20Cardio%20Day%201/index-START.html"
-        >4. Array Cardio 1</a
-      >
-      <a href="5_JavaScript_30/05%20-%20Flex%20Panel%20Gallery/index-START.html"
-        >5. Flex Panels</a
-      >
-      <a href="5_JavaScript_30/06%20-%20Type%20Ahead/index-START.html"
-        >6. Type Ahead</a
-      >
-      <a
-        href="5_JavaScript_30/07%20-%20Array%20Cardio%20Day%202/index-START.html"
-        >7. Array Cardio 2</a
-      >
-      <a
-        href="5_JavaScript_30/08%20-%20Fun%20with%20HTML5%20Canvas/index-START.html"
-        >8. Canvas</a
-      >
-      <a
-        href="5_JavaScript_30/09%20-%20Dev%20Tools%20Domination/index-START.html"
-        >9. Dev Tools</a
-      >
-      <a
-        href="5_JavaScript_30/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/index-START.html"
-        >10. Shift n Check</a
-      >
-      <a href="5_JavaScript_30/11%20-%20Custom%20Video%20Player/index.html"
-        >11. Custom Video Player</a
-      >
-      <a
-        href="5_JavaScript_30/12%20-%20Key%20Sequence%20Detection/index-START.html"
-        >12. Key Sequence Detection</a
-      >
-      <a
-        href="5_JavaScript_30/13%20-%20Slide%20in%20on%20Scroll/index-START.html"
-        >13. Slide in on Scroll</a
-      >
-      <a
-        href="5_JavaScript_30/14%20-%20JavaScript%20References%20VS%20Copying/index-START.html"
-        >14. JS Reference vs Copy</a
-      >
-      <a href="5_JavaScript_30/15%20-%20LocalStorage/index-START.html"
-        >15. Local Storage</a
-      >
-      <a href="5_JavaScript_30/16%20-%20Mouse%20Move%20Shadow/index-START.html"
-        >16. Mouse Move Shadow</a
-      >
-      <a
-        href="5_JavaScript_30/17%20-%20Sort%20Without%20Articles/index-START.html"
-        >17. Sort Without Articles</a
-      >
-      <a
-        href="5_JavaScript_30/18%20-%20Adding%20Up%20Times%20with%20Reduce/index-START.html"
-        >18. Adding Up Times</a
-      >
+      <a href="5_JavaScript_30/01%20-%20JavaScript%20Drum%20Kit/index-START.html">1. Drum Kit</a>
+      <a href="5_JavaScript_30/02%20-%20JS%20and%20CSS%20Clock/index-START.html">2. Clock</a>
+      <a href="5_JavaScript_30/03%20-%20CSS%20Variables/index-START.html">3. CSS Variables</a>
+      <a href="5_JavaScript_30/04%20-%20Array%20Cardio%20Day%201/index-START.html">4. Array Cardio 1</a>
+      <a href="5_JavaScript_30/05%20-%20Flex%20Panel%20Gallery/index-START.html">5. Flex Panels</a>
+      <a href="5_JavaScript_30/06%20-%20Type%20Ahead/index-START.html">6. Type Ahead</a>
+      <a href="5_JavaScript_30/07%20-%20Array%20Cardio%20Day%202/index-START.html">7. Array Cardio 2</a>
+      <a href="5_JavaScript_30/08%20-%20Fun%20with%20HTML5%20Canvas/index-START.html">8. Canvas</a>
+      <a href="5_JavaScript_30/09%20-%20Dev%20Tools%20Domination/index-START.html">9. Dev Tools</a>
+      <a href="5_JavaScript_30/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/index-START.html">10. Shift n Check</a>
+      <a href="5_JavaScript_30/11%20-%20Custom%20Video%20Player/index.html">11. Custom Video Player</a>
+      <a href="5_JavaScript_30/12%20-%20Key%20Sequence%20Detection/index-START.html">12. Key Sequence Detection</a>
+      <a href="5_JavaScript_30/13%20-%20Slide%20in%20on%20Scroll/index-START.html">13. Slide in on Scroll</a>
+      <a href="5_JavaScript_30/14%20-%20JavaScript%20References%20VS%20Copying/index-START.html">14. JS Reference vs Copy</a>
+      <a href="5_JavaScript_30/15%20-%20LocalStorage/index-START.html">15. Local Storage</a>
+      <a href="5_JavaScript_30/16%20-%20Mouse%20Move%20Shadow/index-START.html">16. Mouse Move Shadow</a>
+      <a href="5_JavaScript_30/17%20-%20Sort%20Without%20Articles/index-START.html">17. Sort Without Articles</a>
+      <a href="5_JavaScript_30/18%20-%20Adding%20Up%20Times%20with%20Reduce/index-START.html">18. Adding Up Times</a>
       <a href="">19. Webcam Fun</a>
       <a href="">20. Speech Detection</a>
       <a href="">21. Geolocation</a>
