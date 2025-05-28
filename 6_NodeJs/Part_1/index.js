@@ -1,13 +1,9 @@
 const fs = require("fs");
 
-const command = process.argv[2];
-const input1 = process.argv[3];
-const input2 = process.argv[4];
-
 const filePath = "notes.json";
 
 const inputs = process.argv.length;
-if (inputs === 3) {
+if (inputs === 3) { // only one input
   const command = process.argv[2];
 
   if (command === "list") {
