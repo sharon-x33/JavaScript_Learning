@@ -42,10 +42,10 @@ function deleteNote(id) {
   const index = notes.findIndex(note => note.id === id);
   if (index === -1) return null;
   const removed = notes.splice(index, 1)[0];
-  notes = notes.map((note, index) => ({
-    id: index + 1,
-    text: note.text,
-  }));
+   notes = notes.map((note, index) => ({
+            id: index + 1,
+            text: note.text,
+          }));
   saveNotes(notes);
   return removed;
 }
